@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+
+ :root {
+    --body-bg-color: #FAF7FD;
+    --purple: #BB99DD;
+  }
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: #FAF7FD;
+}
+
+.main {
+     width: 100vw;
+     height: 100vh;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+.main .tree-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.tree-main .photo {
+    width: 213px;
+    height: 213px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #BB99DD;
+    border-radius: 50%;
+}
+
+.tree-main .photo img {
+    width: 200px;
+    height: 200px;
+    border-radius: 80%;
+}
+
+.tree-main .name {
+    margin-top: 10px;
+    color: purple;
+}
+
+.tree-main .links-main {
+    margin-top:  15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.links-main .link {
+    margin-top: 15px;
+    width: 326px;
+    border: 2px solid purple;
+    border-radius: 4px;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 8px 0;
+    transition:  0.5s;
+}
+
+.links-main .link:hover {
+    background: rgb(211, 122, 211);
+    color: #FAF7FD;
+}
+
+.tree-main .social-main {
+    margin-top: 68px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 24px;
+}
+
+.social-main .social-icon {
+    transform: scale(0.9);
+    transition: ease 0.3s;
+}
+
+.social-main .social-icon:hover {
+    transform: scale(1.2);
+}
